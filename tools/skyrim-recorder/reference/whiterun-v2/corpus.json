@@ -1,0 +1,456 @@
+{
+  "schema": 1,
+  "plan": {
+    "schema": 1,
+    "name": "issue-520-whiterun-v2",
+    "runtime_sha256": "846efccf0c1374d71f892907f46549560f2fcb0a75cb87a3eed438baa0f1402f",
+    "source_save_sha256": "68ee54f10c6a12571cf40a42659ee8af6b6bc7a04506505481f855952e75babd",
+    "repeats": 3,
+    "pre_roll_seconds": 0.75,
+    "post_roll_seconds": 1.9,
+    "max_gap_seconds": 0.1,
+    "minimum_gain": 0.05,
+    "max_heldout_rmse": 0.1,
+    "max_heldout_peak": 0.5,
+    "max_end_bias": 0.05,
+    "control_peak_allowance": 0.1,
+    "search": {
+      "spring_log10_bounds": [
+        -5,
+        -1
+      ],
+      "damping_bounds": [
+        0,
+        0.95
+      ],
+      "spring_seeds": [
+        [
+          -2,
+          0.2
+        ],
+        [
+          -4,
+          0.8
+        ],
+        [
+          -1,
+          0.5
+        ]
+      ],
+      "exponential_ms_bounds": [
+        5,
+        250
+      ],
+      "max_evaluations": 400
+    },
+    "cases": [
+      {
+        "schema": 1,
+        "name": "castle-lower-up",
+        "kind": "ascent",
+        "position": [
+          24828,
+          -2800,
+          -2750
+        ],
+        "yaw_degrees": 0,
+        "hold_ms": 4000,
+        "modifier": "walk",
+        "source_reference": "000b9bae",
+        "source_mesh": "WRCastleStairs01",
+        "split": "train",
+        "progress_range": [
+          240,
+          320
+        ],
+        "rise_range": [
+          100,
+          155
+        ],
+        "height_range": [
+          100,
+          160
+        ],
+        "start_z_range": [
+          -3005,
+          -2995
+        ],
+        "corridor_half_width": 10,
+        "survey": {
+          "pilot_trace_sha256": "46b7ad0c4b5a713453fb7df0b7866b177f4199177c7586456cc3556d082e7cdc",
+          "before_sha256": "511a75143977ee0b84e161eba2d2b58ab7701694a9c4e36f0a7a76eb0c3c97c9",
+          "after_sha256": "6a983f36368b2b5dc62947a4abbd0c325402a8c31fee2a33ae5fe104a49858f9",
+          "surface": "visually verified authored stairs"
+        }
+      },
+      {
+        "schema": 1,
+        "name": "castle-lower-down",
+        "kind": "descent",
+        "position": [
+          24828,
+          -2480,
+          -2600
+        ],
+        "yaw_degrees": 180,
+        "hold_ms": 4000,
+        "modifier": "walk",
+        "source_reference": "000b9bae",
+        "source_mesh": "WRCastleStairs01",
+        "split": "train",
+        "progress_range": [
+          290,
+          340
+        ],
+        "rise_range": [
+          -180,
+          -125
+        ],
+        "height_range": [
+          125,
+          185
+        ],
+        "start_z_range": [
+          -2855,
+          -2845
+        ],
+        "corridor_half_width": 10,
+        "survey": {
+          "pilot_trace_sha256": "51853129609ff8be5bddb04653f815099cdaf30f8d56b923ac3c715413d3b377",
+          "before_sha256": "d01ec489fe3706525ab2aa3982206abd4557344ca7115057e8e71d282cba9de0",
+          "after_sha256": "ba57332b1c684fff0280a055c4413acc9b3c0fc09d68b19edc38a1d931c0a8e3",
+          "surface": "visually verified authored stairs"
+        }
+      },
+      {
+        "schema": 1,
+        "name": "castle-upper-up",
+        "kind": "ascent",
+        "position": [
+          24828,
+          -2180,
+          -2550
+        ],
+        "yaw_degrees": 0,
+        "hold_ms": 3000,
+        "modifier": "walk",
+        "source_reference": "0004c416",
+        "source_mesh": "WRPondStairs02",
+        "split": "heldout",
+        "progress_range": [
+          180,
+          240
+        ],
+        "rise_range": [
+          70,
+          110
+        ],
+        "height_range": [
+          70,
+          115
+        ],
+        "start_z_range": [
+          -2690,
+          -2680
+        ],
+        "corridor_half_width": 10,
+        "survey": {
+          "pilot_trace_sha256": "337806bd3d45d2a68de981a051172328306135b6b0a0a736cdb096a385e5fdd4",
+          "before_sha256": "a11284d1d3229ae3bca49c730aeb7f65c6437183ba4439f746b536b4af536eba",
+          "after_sha256": "270f574fa67f03303b8ecc8f59eba8ddec57c142cc76ff144716dcd3ca2759b1",
+          "surface": "visually verified authored stairs"
+        }
+      },
+      {
+        "schema": 1,
+        "name": "castle-upper-down",
+        "kind": "descent",
+        "position": [
+          24828,
+          -1940,
+          -2450
+        ],
+        "yaw_degrees": 180,
+        "hold_ms": 3000,
+        "modifier": "walk",
+        "source_reference": "0004c416",
+        "source_mesh": "WRPondStairs02",
+        "split": "heldout",
+        "progress_range": [
+          210,
+          270
+        ],
+        "rise_range": [
+          -110,
+          -70
+        ],
+        "height_range": [
+          70,
+          115
+        ],
+        "start_z_range": [
+          -2605,
+          -2590
+        ],
+        "corridor_half_width": 10,
+        "survey": {
+          "pilot_trace_sha256": "6162da7ab23ba18d8237059da53f03056b7f7ea34040fc5190087753e64f7bef",
+          "before_sha256": "a224c190a73c44f03f8a0f02606baa135ec7bfeab315585313d2473a63b8069d",
+          "after_sha256": "63c046c9117db5b031773b6dd30b12b13d143202e6e9f0761f60b4d07d403232",
+          "surface": "visually verified authored stairs"
+        }
+      },
+      {
+        "schema": 1,
+        "name": "courtyard-flat",
+        "kind": "flat",
+        "position": [
+          24828,
+          -3000,
+          -2900
+        ],
+        "yaw_degrees": 90,
+        "hold_ms": 2000,
+        "modifier": "walk",
+        "split": "heldout",
+        "progress_range": [
+          145,
+          185
+        ],
+        "rise_range": [
+          -1,
+          1
+        ],
+        "height_range": [
+          0,
+          1
+        ],
+        "start_z_range": [
+          -3005,
+          -3000
+        ],
+        "corridor_half_width": 10,
+        "survey": {
+          "pilot_trace_sha256": "ae2f750f53a65dd0773a9b2df92bf74f539c3f3a50b6c8bbf21e164f176d4c99",
+          "before_sha256": "14474b60243f08ba466bd4b4688b4195e865887e63aec4729bfbfe0f28752393",
+          "after_sha256": "3ecfebc0ece913e28666ead9c7069801dd284936f14aeb9777ad7bcbada89f77",
+          "surface": "courtyard control"
+        }
+      },
+      {
+        "schema": 1,
+        "name": "courtyard-jump",
+        "kind": "jump",
+        "position": [
+          24828,
+          -3000,
+          -2900
+        ],
+        "yaw_degrees": 90,
+        "hold_ms": 500,
+        "modifier": "jump",
+        "split": "heldout",
+        "progress_range": [
+          170,
+          230
+        ],
+        "rise_range": [
+          -2,
+          2
+        ],
+        "height_range": [
+          60,
+          90
+        ],
+        "start_z_range": [
+          -3005,
+          -3000
+        ],
+        "corridor_half_width": 10,
+        "survey": {
+          "pilot_trace_sha256": "98dc8a98e7d0ad5ec568213b7374517db6a26def0f8507c2010ab72b078dfaf5",
+          "before_sha256": "5af246301f5892afe752a90bfa1f798c928dd2d328fe0c9798d4e193b4a53060",
+          "after_sha256": "958bb5ded1e629e18a4147b4841c69c60cf9effe50e6c99392a74e383ddcdf41",
+          "surface": "courtyard control"
+        }
+      }
+    ]
+  },
+  "plan_sha256": "de6f83ba45b7236d8614f6543b3884de43c49d96700c14eb484e8323b077e14e",
+  "assets": {
+    "Skyrim.esm": "e198c3b85e5e48e0c92a6580d8f66e644256b68d812ee32b61735cf9b753df73",
+    "Skyrim - Meshes0.bsa": "f3de11a1fcbd8b3e9582d5981be815c2c5f160f5be21044479e318de8a5183e9",
+    "Skyrim - Meshes1.bsa": "d0e4a62fac342271c27aba5338296ddfe06de790448ebe6e9cf6df7460a4f7c0"
+  },
+  "runs": [
+    {
+      "name": "castle-lower-up-1",
+      "fixture": "castle-lower-up",
+      "kind": "ascent",
+      "split": "train",
+      "repeat": 1,
+      "path": "runs/castle-lower-up-1.json",
+      "sha256": "85f0963f4dd5936d4f5adc0f5df085f51f414340042b575f413eda576089c629"
+    },
+    {
+      "name": "castle-lower-down-1",
+      "fixture": "castle-lower-down",
+      "kind": "descent",
+      "split": "train",
+      "repeat": 1,
+      "path": "runs/castle-lower-down-1.json",
+      "sha256": "c4b7132f91fabe831d7e255b3456b353da7707a81c8be5d8bc9389762d63ac0f"
+    },
+    {
+      "name": "castle-upper-up-1",
+      "fixture": "castle-upper-up",
+      "kind": "ascent",
+      "split": "heldout",
+      "repeat": 1,
+      "path": "runs/castle-upper-up-1.json",
+      "sha256": "8a5477ef3440d0ad5e54bd1de0a9b66ac11fdc8e9d8f12c59500bf2b7445e387"
+    },
+    {
+      "name": "castle-upper-down-1",
+      "fixture": "castle-upper-down",
+      "kind": "descent",
+      "split": "heldout",
+      "repeat": 1,
+      "path": "runs/castle-upper-down-1.json",
+      "sha256": "30f679fbbcf65b50dfa83bdfe7de6767d995c677925420647b6323205d296f1d"
+    },
+    {
+      "name": "courtyard-flat-1",
+      "fixture": "courtyard-flat",
+      "kind": "flat",
+      "split": "heldout",
+      "repeat": 1,
+      "path": "runs/courtyard-flat-1.json",
+      "sha256": "873539bb283bc629b4d43b468a835ad2579b813c5cfe986c5e1c2f960e93834b"
+    },
+    {
+      "name": "courtyard-jump-1",
+      "fixture": "courtyard-jump",
+      "kind": "jump",
+      "split": "heldout",
+      "repeat": 1,
+      "path": "runs/courtyard-jump-1.json",
+      "sha256": "659d6f53cf8a7b43fc0b4b2ada366ea5004922a990a182b665564ee9a47b38bb"
+    },
+    {
+      "name": "castle-lower-up-2",
+      "fixture": "castle-lower-up",
+      "kind": "ascent",
+      "split": "train",
+      "repeat": 2,
+      "path": "runs/castle-lower-up-2.json",
+      "sha256": "93762dcceec323f7698a5ab69a03be75cbaa3590ad1995fa3d8aead3f57ef7c1"
+    },
+    {
+      "name": "castle-lower-down-2",
+      "fixture": "castle-lower-down",
+      "kind": "descent",
+      "split": "train",
+      "repeat": 2,
+      "path": "runs/castle-lower-down-2.json",
+      "sha256": "cbfe6e472f7b7861808113639c10624bfa97baf9938bc9decea12ca240636eb3"
+    },
+    {
+      "name": "castle-upper-up-2",
+      "fixture": "castle-upper-up",
+      "kind": "ascent",
+      "split": "heldout",
+      "repeat": 2,
+      "path": "runs/castle-upper-up-2.json",
+      "sha256": "39f3ca1f479db368d641baf14dccd21825a7d36223cc947258abc4a85dc6b6e8"
+    },
+    {
+      "name": "castle-upper-down-2",
+      "fixture": "castle-upper-down",
+      "kind": "descent",
+      "split": "heldout",
+      "repeat": 2,
+      "path": "runs/castle-upper-down-2.json",
+      "sha256": "64c9fb6d53358c7910f3527943a7a4ccdac134943283ea39f9228a029cdd4ee8"
+    },
+    {
+      "name": "courtyard-flat-2",
+      "fixture": "courtyard-flat",
+      "kind": "flat",
+      "split": "heldout",
+      "repeat": 2,
+      "path": "runs/courtyard-flat-2.json",
+      "sha256": "112a7b974db5037627dda612296d9fea4a9208c8795c77a6b0cae8df0034966b"
+    },
+    {
+      "name": "courtyard-jump-2",
+      "fixture": "courtyard-jump",
+      "kind": "jump",
+      "split": "heldout",
+      "repeat": 2,
+      "path": "runs/courtyard-jump-2.json",
+      "sha256": "b7c82d9f645726a9d9e8a6d2b464b2a613f621796b5ebcdef0332210f4768a3f"
+    },
+    {
+      "name": "castle-lower-up-3",
+      "fixture": "castle-lower-up",
+      "kind": "ascent",
+      "split": "train",
+      "repeat": 3,
+      "path": "runs/castle-lower-up-3.json",
+      "sha256": "7dad3de6375c78d79a5bbcf38a7a70e63ca36c8f9e897b92fcaef0bf3fcbda58"
+    },
+    {
+      "name": "castle-lower-down-3",
+      "fixture": "castle-lower-down",
+      "kind": "descent",
+      "split": "train",
+      "repeat": 3,
+      "path": "runs/castle-lower-down-3.json",
+      "sha256": "9f5d452579a6ae1248c6fe26cdfdf3a78c3d16f53fffc25685ec41607dc03ade"
+    },
+    {
+      "name": "castle-upper-up-3",
+      "fixture": "castle-upper-up",
+      "kind": "ascent",
+      "split": "heldout",
+      "repeat": 3,
+      "path": "runs/castle-upper-up-3.json",
+      "sha256": "9336cb2fe14c0dbb440037f59361df6073dba0b5545cc067e88bf298203129d6"
+    },
+    {
+      "name": "castle-upper-down-3",
+      "fixture": "castle-upper-down",
+      "kind": "descent",
+      "split": "heldout",
+      "repeat": 3,
+      "path": "runs/castle-upper-down-3.json",
+      "sha256": "2a3bb6affc2543967cdb6dc8a10c613e20c2f3dede3f45eb5e39e5f74460d92f"
+    },
+    {
+      "name": "courtyard-flat-3",
+      "fixture": "courtyard-flat",
+      "kind": "flat",
+      "split": "heldout",
+      "repeat": 3,
+      "path": "runs/courtyard-flat-3.json",
+      "sha256": "bd45ba0bbd194c8e402813891c8a62e6f2b58df2530dc0e95c53b4ea0a5ea3bd"
+    },
+    {
+      "name": "courtyard-jump-3",
+      "fixture": "courtyard-jump",
+      "kind": "jump",
+      "split": "heldout",
+      "repeat": 3,
+      "path": "runs/courtyard-jump-3.json",
+      "sha256": "e076d632dbf6651f62f8ba3742b24cc75b4051cb46880d32a03351a09dc6f030"
+    }
+  ],
+  "capture_source": {
+    "session_sha256": "f6e7647eb3b8bbefb50f78a50d613da3a7470bf81cc97638ed035450b00d509e",
+    "plan_sha256": "74ce8df45a400fa483031e7571b238c1b185ef29b8f289840670fa28001d8ae8",
+    "recorder_source_sha256": "9a2246ff441b2597bc00551ee62cfb01c3d775ac68492b7697c949c17ccb0e78",
+    "runner_sha256": "a007d5a1728855ae8896123a61e131350fbb2486cfae9b47359317a8a86f552c",
+    "normalizer_sha256": "7f50990ed22b89138bb4746c206630588ae9bdae6bcfff2842c52dac56f572ac"
+  }
+}

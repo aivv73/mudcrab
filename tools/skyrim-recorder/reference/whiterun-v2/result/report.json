@@ -1,0 +1,649 @@
+{
+  "schema": 1,
+  "verdict": "rejected",
+  "winner": {
+    "candidate": {
+      "model": "spring",
+      "a": 0.001,
+      "b": 0.6000000000000001
+    },
+    "corpus_sha256": "3d18b34e4d1010014b7db1acd9d9be8783a57575640833dc463446e8bc546efa",
+    "plan_sha256": "de6f83ba45b7236d8614f6543b3884de43c49d96700c14eb484e8323b077e14e",
+    "model_source_sha256": "37d9968aa3d2472c06dde3ab9609c03934d75af929d2064c4006eb1fd0ff8323",
+    "evaluator_sha256": "7f50990ed22b89138bb4746c206630588ae9bdae6bcfff2842c52dac56f572ac",
+    "binary_sha256": "fceb19467b0f677a4778508e4e8c9f74cc55f6cc546ee51b38258dc68a0b0afb",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "training_loss": 0.0001388925163449026,
+    "trials": 265
+  },
+  "winner_lock_sha256": "6457c8d6390ecbc0349793127a39650141aa8b07632335f4735c6b664e7f792e",
+  "models": {
+    "direct": "HEAD 1dcca42 walk_camera_follow_system, relative-height equivalence",
+    "exponential_55ms": "PR511 41df866 response formula only; all vertical deltas; solver eligibility NOT replayed",
+    "candidate": "free-running f64 response; native scaled dt; all vertical deltas; observed gate=weight=1"
+  },
+  "training_repeat_rmse_spread": 0.00422708939853389,
+  "required_gain": 0.05,
+  "runs": [
+    {
+      "name": "castle-lower-up-1",
+      "fixture": "castle-lower-up",
+      "kind": "ascent",
+      "split": "train",
+      "direct": {
+        "rmse": 1.2465060066801381,
+        "peak": 1.848388671875
+      },
+      "exponential_55ms": {
+        "rmse": 0.10028922442124759,
+        "peak": 0.45640571994882967
+      },
+      "candidate": {
+        "rmse": 0.0001150435022434078,
+        "peak": 0.0003198349568398484
+      },
+      "end_bias": 1.7759787052740768e-10,
+      "native_settling": 0.2084375999999999,
+      "candidate_settling": 0.2084375999999999,
+      "source_node_conditioned_peak": 0.0003198349568407366,
+      "source_node_excursion": 0.0
+    },
+    {
+      "name": "castle-lower-down-1",
+      "fixture": "castle-lower-down",
+      "kind": "descent",
+      "split": "train",
+      "direct": {
+        "rmse": 1.5084096954326636,
+        "peak": 2.626953125
+      },
+      "exponential_55ms": {
+        "rmse": 0.12470873922583246,
+        "peak": 0.5445225085196648
+      },
+      "candidate": {
+        "rmse": 0.00012179704289223547,
+        "peak": 0.0003767382237391814
+      },
+      "end_bias": 0.00011791941950148282,
+      "native_settling": 0.0,
+      "candidate_settling": 0.0,
+      "source_node_conditioned_peak": 0.0003767382237356287,
+      "source_node_excursion": 0.0
+    },
+    {
+      "name": "castle-lower-up-2",
+      "fixture": "castle-lower-up",
+      "kind": "ascent",
+      "split": "train",
+      "direct": {
+        "rmse": 1.2424182504918682,
+        "peak": 1.841064453125
+      },
+      "exponential_55ms": {
+        "rmse": 0.10285238525687523,
+        "peak": 0.46104608572702865
+      },
+      "candidate": {
+        "rmse": 0.0051898541898731925,
+        "peak": 0.0054825864524319645
+      },
+      "end_bias": 0.005371093778040125,
+      "native_settling": 0.22592109999999943,
+      "candidate_settling": 0.20872659999999987,
+      "source_node_conditioned_peak": 0.00035563332743038245,
+      "source_node_excursion": 0.005126953125
+    },
+    {
+      "name": "castle-lower-down-2",
+      "fixture": "castle-lower-down",
+      "kind": "descent",
+      "split": "train",
+      "direct": {
+        "rmse": 1.5041826060341297,
+        "peak": 2.623046875
+      },
+      "exponential_55ms": {
+        "rmse": 0.12416681397162088,
+        "peak": 0.5409347118680543
+      },
+      "candidate": {
+        "rmse": 0.0001556930802391078,
+        "peak": 0.000391426765195213
+      },
+      "end_bias": 0.00028182562116096444,
+      "native_settling": 0.0,
+      "candidate_settling": 0.0,
+      "source_node_conditioned_peak": 0.00039142676519077213,
+      "source_node_excursion": 0.0
+    },
+    {
+      "name": "castle-lower-up-3",
+      "fixture": "castle-lower-up",
+      "kind": "ascent",
+      "split": "train",
+      "direct": {
+        "rmse": 1.2462300049788002,
+        "peak": 1.85107421875
+      },
+      "exponential_55ms": {
+        "rmse": 0.0999656863879168,
+        "peak": 0.4530422956225114
+      },
+      "candidate": {
+        "rmse": 0.00015598798979756973,
+        "peak": 0.00036534231842554776
+      },
+      "end_bias": 0.00024414064292283075,
+      "native_settling": 0.20968699999999973,
+      "candidate_settling": 0.20968699999999973,
+      "source_node_conditioned_peak": 0.0003653423184317717,
+      "source_node_excursion": 0.0
+    },
+    {
+      "name": "castle-lower-down-3",
+      "fixture": "castle-lower-down",
+      "kind": "descent",
+      "split": "train",
+      "direct": {
+        "rmse": 1.5048475508145724,
+        "peak": 2.61669921875
+      },
+      "exponential_55ms": {
+        "rmse": 0.12596700209394632,
+        "peak": 0.548517101504316
+      },
+      "candidate": {
+        "rmse": 0.00010765833258573007,
+        "peak": 0.00026687047110956
+      },
+      "end_bias": 0.00010120907370949047,
+      "native_settling": 0.0,
+      "candidate_settling": 0.0,
+      "source_node_conditioned_peak": 0.00026687047110840467,
+      "source_node_excursion": 0.0
+    },
+    {
+      "name": "castle-upper-up-1",
+      "fixture": "castle-upper-up",
+      "kind": "ascent",
+      "split": "heldout",
+      "direct": {
+        "rmse": 1.1071835735301079,
+        "peak": 1.72265625
+      },
+      "exponential_55ms": {
+        "rmse": 0.10402957957956767,
+        "peak": 0.5503900472765977
+      },
+      "candidate": {
+        "rmse": 0.0003470326694801052,
+        "peak": 0.0005155480600604889
+      },
+      "end_bias": 0.0004882812703374586,
+      "native_settling": 0.1576173999999999,
+      "candidate_settling": 0.1576173999999999,
+      "source_node_conditioned_peak": 0.0002714074350649298,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.00034703266947988304,
+        "peak": 0.0005155480600602669
+      }
+    },
+    {
+      "name": "castle-upper-down-1",
+      "fixture": "castle-upper-down",
+      "kind": "descent",
+      "split": "heldout",
+      "direct": {
+        "rmse": 1.1960074246366743,
+        "peak": 1.935302734375
+      },
+      "exponential_55ms": {
+        "rmse": 0.11711396753236403,
+        "peak": 0.5065804456570735
+      },
+      "candidate": {
+        "rmse": 0.000329362144411642,
+        "peak": 0.000521251700990244
+      },
+      "end_bias": 0.0004882812726362505,
+      "native_settling": 0.2212896999999998,
+      "candidate_settling": 0.20459609999999984,
+      "source_node_conditioned_peak": 0.00030167938638214764,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.0003293621444117636,
+        "peak": 0.000521251700990244
+      }
+    },
+    {
+      "name": "courtyard-flat-1",
+      "fixture": "courtyard-flat",
+      "kind": "flat",
+      "split": "heldout",
+      "direct": {
+        "rmse": 0.004501427059325694,
+        "peak": 0.009765625
+      },
+      "exponential_55ms": {
+        "rmse": 0.00047826193925978465,
+        "peak": 0.0019994407542732653
+      },
+      "candidate": {
+        "rmse": 0.00026729036454475094,
+        "peak": 0.0006107763263748898
+      },
+      "end_bias": 0.0002441406248945642,
+      "native_settling": 0.0,
+      "candidate_settling": 0.0,
+      "source_node_conditioned_peak": 0.00036663570136852286,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.00026729036454474974,
+        "peak": 0.0006107763263748896
+      }
+    },
+    {
+      "name": "courtyard-jump-1",
+      "fixture": "courtyard-jump",
+      "kind": "jump",
+      "split": "heldout",
+      "direct": {
+        "rmse": 5.827739740848013,
+        "peak": 15.803466796875
+      },
+      "exponential_55ms": {
+        "rmse": 2.984509061721843,
+        "peak": 8.787640060387364
+      },
+      "candidate": {
+        "rmse": 2.4346426502660186,
+        "peak": 7.222880818915179
+      },
+      "end_bias": 2.8728490174811002e-08,
+      "native_settling": 1.1584609000000001,
+      "candidate_settling": 0.7584275,
+      "source_node_conditioned_peak": 0.0003195131764073267,
+      "source_node_excursion": 7.222900390625,
+      "documented_spring": {
+        "rmse": 2.4346426502660186,
+        "peak": 7.222880818915179
+      }
+    },
+    {
+      "name": "castle-upper-up-2",
+      "fixture": "castle-upper-up",
+      "kind": "ascent",
+      "split": "heldout",
+      "direct": {
+        "rmse": 1.1090732339324785,
+        "peak": 1.728271484375
+      },
+      "exponential_55ms": {
+        "rmse": 0.10361252989934608,
+        "peak": 0.5523365047259043
+      },
+      "candidate": {
+        "rmse": 0.0003453184599149738,
+        "peak": 0.0005250344614151636
+      },
+      "end_bias": 0.0004882812673274976,
+      "native_settling": 0.1536934000000003,
+      "candidate_settling": 0.1536934000000003,
+      "source_node_conditioned_peak": 0.00028089383641827226,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.0003453184599147461,
+        "peak": 0.000525034461422047
+      }
+    },
+    {
+      "name": "castle-upper-down-2",
+      "fixture": "castle-upper-down",
+      "kind": "descent",
+      "split": "heldout",
+      "direct": {
+        "rmse": 1.194618402782701,
+        "peak": 1.934814453125
+      },
+      "exponential_55ms": {
+        "rmse": 0.11734022827657557,
+        "peak": 0.5112558514456683
+      },
+      "candidate": {
+        "rmse": 0.00034113034690689306,
+        "peak": 0.0005958408582982051
+      },
+      "end_bias": 0.0004882812750311625,
+      "native_settling": 0.20709139999999993,
+      "candidate_settling": 0.20709139999999993,
+      "source_node_conditioned_peak": 0.0003517002332955599,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.000341130346907156,
+        "peak": 0.000595840858298205
+      }
+    },
+    {
+      "name": "courtyard-flat-2",
+      "fixture": "courtyard-flat",
+      "kind": "flat",
+      "split": "heldout",
+      "direct": {
+        "rmse": 0.0044998519082296625,
+        "peak": 0.010009765625
+      },
+      "exponential_55ms": {
+        "rmse": 0.0005142787535026956,
+        "peak": 0.002258821651716672
+      },
+      "candidate": {
+        "rmse": 0.0002612895437827235,
+        "peak": 0.0005840495842149001
+      },
+      "end_bias": 0.0002441406249104956,
+      "native_settling": 0.0,
+      "candidate_settling": 0.0,
+      "source_node_conditioned_peak": 0.00033990895921931497,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.00026128954378272257,
+        "peak": 0.0005840495842149001
+      }
+    },
+    {
+      "name": "courtyard-jump-2",
+      "fixture": "courtyard-jump",
+      "kind": "jump",
+      "split": "heldout",
+      "direct": {
+        "rmse": 5.8329501472134995,
+        "peak": 15.602783203125
+      },
+      "exponential_55ms": {
+        "rmse": 2.9223120992879177,
+        "peak": 8.457095384909639
+      },
+      "candidate": {
+        "rmse": 2.4061294933902424,
+        "peak": 7.242429858803414
+      },
+      "end_bias": 7.939086854327802e-08,
+      "native_settling": 1.1706206,
+      "candidate_settling": 0.7536765999999999,
+      "source_node_conditioned_peak": 0.0002799572942535633,
+      "source_node_excursion": 7.242431640625,
+      "documented_spring": {
+        "rmse": 2.406129493390243,
+        "peak": 7.242429858803414
+      }
+    },
+    {
+      "name": "castle-upper-up-3",
+      "fixture": "castle-upper-up",
+      "kind": "ascent",
+      "split": "heldout",
+      "direct": {
+        "rmse": 1.1087794358480854,
+        "peak": 1.73486328125
+      },
+      "exponential_55ms": {
+        "rmse": 0.1033042291599297,
+        "peak": 0.5502264971668187
+      },
+      "candidate": {
+        "rmse": 0.00034658313586663443,
+        "peak": 0.0005632618847783988
+      },
+      "end_bias": 0.0004882812670694327,
+      "native_settling": 0.16064500000000015,
+      "candidate_settling": 0.16064500000000015,
+      "source_node_conditioned_peak": 0.0003191212597783988,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.0003465831358664434,
+        "peak": 0.0005632618847721815
+      }
+    },
+    {
+      "name": "castle-upper-down-3",
+      "fixture": "castle-upper-down",
+      "kind": "descent",
+      "split": "heldout",
+      "direct": {
+        "rmse": 1.1944491123291212,
+        "peak": 1.953125
+      },
+      "exponential_55ms": {
+        "rmse": 0.11740973433887322,
+        "peak": 0.5120316383263069
+      },
+      "candidate": {
+        "rmse": 0.00034142199981465274,
+        "peak": 0.0005690483759384288
+      },
+      "end_bias": 0.0004882812934994386,
+      "native_settling": 0.2078313999999999,
+      "candidate_settling": 0.2078313999999999,
+      "source_node_conditioned_peak": 0.0003249077509366316,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.00034142199981482025,
+        "peak": 0.000569048375938427
+      }
+    },
+    {
+      "name": "courtyard-flat-3",
+      "fixture": "courtyard-flat",
+      "kind": "flat",
+      "split": "heldout",
+      "direct": {
+        "rmse": 0.004435124021902074,
+        "peak": 0.009765625
+      },
+      "exponential_55ms": {
+        "rmse": 0.0005002114246371858,
+        "peak": 0.002230399287337966
+      },
+      "candidate": {
+        "rmse": 0.00017762017934735099,
+        "peak": 0.0005801900051365036
+      },
+      "end_bias": 1.0207128890655356e-13,
+      "native_settling": 0.0,
+      "candidate_settling": 0.0,
+      "source_node_conditioned_peak": 0.00041055912608101153,
+      "source_node_excursion": 0.000244140625,
+      "documented_spring": {
+        "rmse": 0.00017762017934734985,
+        "peak": 0.0005801900051365036
+      }
+    },
+    {
+      "name": "courtyard-jump-3",
+      "fixture": "courtyard-jump",
+      "kind": "jump",
+      "split": "heldout",
+      "direct": {
+        "rmse": 5.83969482191875,
+        "peak": 15.57275390625
+      },
+      "exponential_55ms": {
+        "rmse": 2.9550510776349834,
+        "peak": 8.475189975580188
+      },
+      "candidate": {
+        "rmse": 2.4400446744907565,
+        "peak": 7.21910102080975
+      },
+      "end_bias": 1.1514449702778621e-08,
+      "native_settling": 1.174785,
+      "candidate_settling": 0.7586599999999999,
+      "source_node_conditioned_peak": 0.0003347034209184585,
+      "source_node_excursion": 7.218994140625,
+      "documented_spring": {
+        "rmse": 2.4400446744907565,
+        "peak": 7.21910102080975
+      }
+    }
+  ],
+  "gates": [
+    {
+      "name": "castle-upper-up-1:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-up-1:settled",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-down-1:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-down-1:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-1:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-1:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-1:control",
+      "passed": true
+    },
+    {
+      "name": "courtyard-jump-1:absolute_fit",
+      "passed": false
+    },
+    {
+      "name": "courtyard-jump-1:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-jump-1:control",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-up-2:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-up-2:settled",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-down-2:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-down-2:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-2:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-2:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-2:control",
+      "passed": true
+    },
+    {
+      "name": "courtyard-jump-2:absolute_fit",
+      "passed": false
+    },
+    {
+      "name": "courtyard-jump-2:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-jump-2:control",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-up-3:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-up-3:settled",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-down-3:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "castle-upper-down-3:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-3:absolute_fit",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-3:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-flat-3:control",
+      "passed": true
+    },
+    {
+      "name": "courtyard-jump-3:absolute_fit",
+      "passed": false
+    },
+    {
+      "name": "courtyard-jump-3:settled",
+      "passed": true
+    },
+    {
+      "name": "courtyard-jump-3:control",
+      "passed": true
+    }
+  ],
+  "stair_gains": [
+    {
+      "split": "train",
+      "kind": "ascent",
+      "median_gain": 0.09980969839811922,
+      "required_gain": 0.05,
+      "passed": true
+    },
+    {
+      "split": "train",
+      "kind": "descent",
+      "median_gain": 0.12458694218294022,
+      "required_gain": 0.05,
+      "passed": true
+    },
+    {
+      "split": "heldout",
+      "kind": "ascent",
+      "median_gain": 0.1032672114394311,
+      "required_gain": 0.05,
+      "passed": true
+    },
+    {
+      "split": "heldout",
+      "kind": "descent",
+      "median_gain": 0.11699909792966869,
+      "required_gain": 0.05,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "post-update CPU camera boundary, not GPU consumption",
+    "three repeats per fixture, one runtime and cadence",
+    "native player trajectory supplied; no Mudcrab movement/collision parity",
+    "production camera unchanged"
+  ]
+}

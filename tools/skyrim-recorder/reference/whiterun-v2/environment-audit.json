@@ -1,0 +1,24 @@
+{
+  "scope": "Additional environment snapshot taken during the last repeat; not an attestation of every asset loaded by the game",
+  "files": {
+    "Skyrim.ini": {
+      "sha256": "9b34c57f23e41066cd87f15e6c9bd19b55cad30ae160933c43b2c2a38c0eaf54",
+      "bytes": 527,
+      "text": "[General]\nsLanguage=ENGLISH\nsIntroSequence=\n[Archive]\nsResourceArchiveList=Skyrim - Misc.bsa, Skyrim - Shaders.bsa, Skyrim - Interface.bsa, Skyrim - Animations.bsa, Skyrim - Meshes0.bsa, Skyrim - Meshes1.bsa, Skyrim - Sounds.bsa\nsResourceArchiveList2=Skyrim - Voices_en0.bsa, Skyrim - Textures0.bsa, Skyrim - Textures1.bsa, Skyrim - Textures2.bsa, Skyrim - Textures3.bsa, Skyrim - Textures4.bsa, Skyrim - Textures5.bsa, Skyrim - Textures6.bsa, Skyrim - Textures7.bsa, Skyrim - Textures8.bsa\n[SaveGame]\nbAllowScriptedAutosave=0\n"
+    },
+    "SkyrimPrefs.ini": {
+      "sha256": "d39e69bc65af75771ee5a6e7c3e0a931dd9efacc26267fd49c09f746fa0bbf80",
+      "bytes": 267,
+      "text": "[Display]\nbFull Screen=0\nbBorderless=1\niSize W=1280\niSize H=720\niVSyncPresentInterval=1\niMultiSample=0\niShadowMapResolution=1024\nbUseTAA=0\n[MAIN]\nbSaveOnPause=0\nbSaveOnTravel=0\nbSaveOnWait=0\nbSaveOnRest=0\n[Launcher]\nbEnableFileSelection=1\n[Controls]\nbGamePadEnable=0\n"
+    },
+    "Plugins.txt": {
+      "sha256": "f1a2f9ac6966906068474da0df8cd64c6113470858d0f80b1cf3bcebb8e5da25",
+      "bytes": 106,
+      "text": "# This file is used by Skyrim to keep track of your downloaded content.\n# Please do not modify this file.\n"
+    },
+    "Skyrim - Animations.bsa": {
+      "sha256": "f2e1bf18f6498d637998808a06ecf17220d17d123eceddbb796eced8b68dc68a",
+      "bytes": 65155583
+    }
+  }
+}

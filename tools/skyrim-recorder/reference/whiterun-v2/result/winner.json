@@ -1,0 +1,15 @@
+{
+  "candidate": {
+    "model": "spring",
+    "a": 0.001,
+    "b": 0.6000000000000001
+  },
+  "corpus_sha256": "3d18b34e4d1010014b7db1acd9d9be8783a57575640833dc463446e8bc546efa",
+  "plan_sha256": "de6f83ba45b7236d8614f6543b3884de43c49d96700c14eb484e8323b077e14e",
+  "model_source_sha256": "37d9968aa3d2472c06dde3ab9609c03934d75af929d2064c4006eb1fd0ff8323",
+  "evaluator_sha256": "7f50990ed22b89138bb4746c206630588ae9bdae6bcfff2842c52dac56f572ac",
+  "binary_sha256": "fceb19467b0f677a4778508e4e8c9f74cc55f6cc546ee51b38258dc68a0b0afb",
+  "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+  "training_loss": 0.0001388925163449026,
+  "trials": 265
+}

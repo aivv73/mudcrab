@@ -1,0 +1,276 @@
+{
+  "schema": 1,
+  "name": "issue-520-whiterun-v2",
+  "runtime_sha256": "846efccf0c1374d71f892907f46549560f2fcb0a75cb87a3eed438baa0f1402f",
+  "source_save_sha256": "68ee54f10c6a12571cf40a42659ee8af6b6bc7a04506505481f855952e75babd",
+  "repeats": 3,
+  "pre_roll_seconds": 0.75,
+  "post_roll_seconds": 1.9,
+  "max_gap_seconds": 0.1,
+  "minimum_gain": 0.05,
+  "max_heldout_rmse": 0.1,
+  "max_heldout_peak": 0.5,
+  "max_end_bias": 0.05,
+  "control_peak_allowance": 0.1,
+  "search": {
+    "spring_log10_bounds": [
+      -5,
+      -1
+    ],
+    "damping_bounds": [
+      0,
+      0.95
+    ],
+    "spring_seeds": [
+      [
+        -2,
+        0.2
+      ],
+      [
+        -4,
+        0.8
+      ],
+      [
+        -1,
+        0.5
+      ]
+    ],
+    "exponential_ms_bounds": [
+      5,
+      250
+    ],
+    "max_evaluations": 400
+  },
+  "cases": [
+    {
+      "schema": 1,
+      "name": "castle-lower-up",
+      "kind": "ascent",
+      "position": [
+        24828,
+        -2800,
+        -2750
+      ],
+      "yaw_degrees": 0,
+      "hold_ms": 4000,
+      "modifier": "walk",
+      "source_reference": "000b9bae",
+      "source_mesh": "WRCastleStairs01",
+      "split": "train",
+      "progress_range": [
+        240,
+        320
+      ],
+      "rise_range": [
+        100,
+        155
+      ],
+      "height_range": [
+        100,
+        160
+      ],
+      "start_z_range": [
+        -3005,
+        -2995
+      ],
+      "corridor_half_width": 10,
+      "survey": {
+        "pilot_trace_sha256": "46b7ad0c4b5a713453fb7df0b7866b177f4199177c7586456cc3556d082e7cdc",
+        "before_sha256": "511a75143977ee0b84e161eba2d2b58ab7701694a9c4e36f0a7a76eb0c3c97c9",
+        "after_sha256": "6a983f36368b2b5dc62947a4abbd0c325402a8c31fee2a33ae5fe104a49858f9",
+        "surface": "visually verified authored stairs"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "castle-lower-down",
+      "kind": "descent",
+      "position": [
+        24828,
+        -2480,
+        -2600
+      ],
+      "yaw_degrees": 180,
+      "hold_ms": 4000,
+      "modifier": "walk",
+      "source_reference": "000b9bae",
+      "source_mesh": "WRCastleStairs01",
+      "split": "train",
+      "progress_range": [
+        290,
+        340
+      ],
+      "rise_range": [
+        -180,
+        -125
+      ],
+      "height_range": [
+        125,
+        185
+      ],
+      "start_z_range": [
+        -2855,
+        -2845
+      ],
+      "corridor_half_width": 10,
+      "survey": {
+        "pilot_trace_sha256": "51853129609ff8be5bddb04653f815099cdaf30f8d56b923ac3c715413d3b377",
+        "before_sha256": "d01ec489fe3706525ab2aa3982206abd4557344ca7115057e8e71d282cba9de0",
+        "after_sha256": "ba57332b1c684fff0280a055c4413acc9b3c0fc09d68b19edc38a1d931c0a8e3",
+        "surface": "visually verified authored stairs"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "castle-upper-up",
+      "kind": "ascent",
+      "position": [
+        24828,
+        -2180,
+        -2550
+      ],
+      "yaw_degrees": 0,
+      "hold_ms": 3000,
+      "modifier": "walk",
+      "source_reference": "0004c416",
+      "source_mesh": "WRPondStairs02",
+      "split": "heldout",
+      "progress_range": [
+        180,
+        240
+      ],
+      "rise_range": [
+        70,
+        110
+      ],
+      "height_range": [
+        70,
+        115
+      ],
+      "start_z_range": [
+        -2690,
+        -2680
+      ],
+      "corridor_half_width": 10,
+      "survey": {
+        "pilot_trace_sha256": "337806bd3d45d2a68de981a051172328306135b6b0a0a736cdb096a385e5fdd4",
+        "before_sha256": "a11284d1d3229ae3bca49c730aeb7f65c6437183ba4439f746b536b4af536eba",
+        "after_sha256": "270f574fa67f03303b8ecc8f59eba8ddec57c142cc76ff144716dcd3ca2759b1",
+        "surface": "visually verified authored stairs"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "castle-upper-down",
+      "kind": "descent",
+      "position": [
+        24828,
+        -1940,
+        -2450
+      ],
+      "yaw_degrees": 180,
+      "hold_ms": 3000,
+      "modifier": "walk",
+      "source_reference": "0004c416",
+      "source_mesh": "WRPondStairs02",
+      "split": "heldout",
+      "progress_range": [
+        210,
+        270
+      ],
+      "rise_range": [
+        -110,
+        -70
+      ],
+      "height_range": [
+        70,
+        115
+      ],
+      "start_z_range": [
+        -2605,
+        -2590
+      ],
+      "corridor_half_width": 10,
+      "survey": {
+        "pilot_trace_sha256": "6162da7ab23ba18d8237059da53f03056b7f7ea34040fc5190087753e64f7bef",
+        "before_sha256": "a224c190a73c44f03f8a0f02606baa135ec7bfeab315585313d2473a63b8069d",
+        "after_sha256": "63c046c9117db5b031773b6dd30b12b13d143202e6e9f0761f60b4d07d403232",
+        "surface": "visually verified authored stairs"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "courtyard-flat",
+      "kind": "flat",
+      "position": [
+        24828,
+        -3000,
+        -2900
+      ],
+      "yaw_degrees": 90,
+      "hold_ms": 2000,
+      "modifier": "walk",
+      "split": "heldout",
+      "progress_range": [
+        145,
+        185
+      ],
+      "rise_range": [
+        -1,
+        1
+      ],
+      "height_range": [
+        0,
+        1
+      ],
+      "start_z_range": [
+        -3005,
+        -3000
+      ],
+      "corridor_half_width": 10,
+      "survey": {
+        "pilot_trace_sha256": "ae2f750f53a65dd0773a9b2df92bf74f539c3f3a50b6c8bbf21e164f176d4c99",
+        "before_sha256": "14474b60243f08ba466bd4b4688b4195e865887e63aec4729bfbfe0f28752393",
+        "after_sha256": "3ecfebc0ece913e28666ead9c7069801dd284936f14aeb9777ad7bcbada89f77",
+        "surface": "courtyard control"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "courtyard-jump",
+      "kind": "jump",
+      "position": [
+        24828,
+        -3000,
+        -2900
+      ],
+      "yaw_degrees": 90,
+      "hold_ms": 500,
+      "modifier": "jump",
+      "split": "heldout",
+      "progress_range": [
+        170,
+        230
+      ],
+      "rise_range": [
+        -2,
+        2
+      ],
+      "height_range": [
+        60,
+        90
+      ],
+      "start_z_range": [
+        -3005,
+        -3000
+      ],
+      "corridor_half_width": 10,
+      "survey": {
+        "pilot_trace_sha256": "98dc8a98e7d0ad5ec568213b7374517db6a26def0f8507c2010ab72b078dfaf5",
+        "before_sha256": "5af246301f5892afe752a90bfa1f798c928dd2d328fe0c9798d4e193b4a53060",
+        "after_sha256": "958bb5ded1e629e18a4147b4841c69c60cf9effe50e6c99392a74e383ddcdf41",
+        "surface": "courtyard control"
+      }
+    }
+  ]
+}
