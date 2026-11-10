@@ -24,6 +24,9 @@ pub mod carry;
 #[cfg(test)]
 mod stair_tests;
 
+#[cfg(test)]
+mod jump_replay_tests;
+
 use crate::{
     console::{AppConsoleExt, ConsoleCommand, ConsoleState, console_closed},
     profiling::ProfilingState,
